@@ -1,0 +1,18 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@gitlab.com:kramer-ventures/homepage.git",
+  "author": "Jesse Kramer <jesse@kramerventures.nl>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tailwind build css/styles.css -o public/output.css",
+    "prod": "purgecss --css public/output.css --content public/*.html --out public --config purgecss.config.js"
+  },
+  "dependencies": {
+    "tailwindcss": "^1.1.2"
+  },
+  "devDependencies": {
+    "purgecss": "^1.4.1"
+  }
+}
