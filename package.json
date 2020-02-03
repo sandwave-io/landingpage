@@ -6,8 +6,8 @@
   "author": "Jesse Kramer <jesse@kramerventures.nl>",
   "license": "MIT",
   "scripts": {
-    "build": "tailwind build css/styles.css -o public/output.css",
-    "prod": "purgecss --css public/output.css --content public/*.html --out public --config purgecss.config.js"
+    "build": "tailwind build _css/styles.css -o assets/output.css",
+    "purge": "purgecss --css assets/output.css --content _site/*.html --out _site --config purgecss.config.js"
   },
   "dependencies": {
     "tailwindcss": "^1.1.3"
