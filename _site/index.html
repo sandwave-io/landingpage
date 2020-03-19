@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Sandwave Software</title>
+        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900|Roboto:100,300,700" rel="stylesheet">
         <link href="/assets/img/favicon.png" rel="icon">
         <link rel="stylesheet" href="/assets/output.css">
@@ -91,7 +91,7 @@
                     </tr>
                     <tr>
                         <td class="p-2 px-4 text-gray-darkest">IBAN</td>
-                        <td class="p-2 px-4 text-gray-darkest">???????????</td>
+                        <td class="p-2 px-4 text-gray-darkest">NL64 RABO 0161 8876 35</td>
                     </tr>
                     <tr>
                         <td class="p-2 px-4 text-gray-darkest">KvK</td>
@@ -99,14 +99,15 @@
                     </tr>
                     <tr>
                         <td class="p-2 px-4 text-gray-darkest">BTW</td>
-                        <td class="p-2 px-4 text-gray-darkest">???????????</td>
+                        <td class="p-2 px-4 text-gray-darkest">NL815123255B01</td>
                     </tr>
                 </table>
 
             </div>
-            <span class="text-gray-darker text-sm text-center">&copy; 2020 Astralus BV</span>
+            <span class="text-gray-darker text-sm text-center">&copy; 2020 Astralus BV  &middot;</span>
+            <a href="/algemene-voorwaarden.html" class="text-brand text-sm">Algemene voorwaarden</a>
             <br>
-            <span class="text-gray-darker text-sm text-center"><strong>sandwave.io</strong> and <strong>Sandwave Software</strong> are registered trademarks of Astralus BV</span>
+            <span class="text-gray-darker text-sm text-center"><strong>Sandwave.io</strong> and <strong>Sandwave Software</strong> are registered trademarks of Astralus BV</span>
             <br>
             <span class="text-gray-darker text-sm text-center">Site by <a class="font-bold" href="https://kramerventures.nl">Jesse Kramer</a></span>
         </footer>

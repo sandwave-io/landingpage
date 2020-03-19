@@ -4,6 +4,9 @@ module.exports = {
             height: {
                 half: '50vh'
             },
+            minHeight: {
+                half: '50vh'
+            },
             fontFamily: {
                 'display' : ['Source Sans Pro']
             },

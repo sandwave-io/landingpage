@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900|Roboto:100,300,700" rel="stylesheet">
+    <link href="/assets/img/favicon.png" rel="icon">
+    <link rel="stylesheet" href="/assets/output.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We build webhosting software for leading hosting companies.">
+</head>
+<body>
+<header class="hero-gradient hero-pattern">
+    <div class="container mx-auto p-4 text-white flex flex-col">
+        <a href="/">
+            <h1 class="text-2xl text-gray-lightest font-display font-bold">
+                sandwave.io
+            </h1>
+        </a>
+    </div>
+</header>
+
+<section class="container mx-auto px-4 py-20 my-20 min-h-half">
+
+    <h2 class="text-2xl font-display font-bold mb-4">{{ page.title }}</h2>
+
+    {{ content }}
+
+</section>
+
+<hr class="text-gray-lighter">
+
+<footer class="bg-gray-lightest py-20 text-center">
+    <div class="container mx-auto px-4 py-20 text-left">
+
+        <h2 class="text-2xl font-display font-black mb-4">Contact</h2>
+
+        <table class="-ml-4">
+            <tr>
+                <td class="p-2 px-4 text-gray-darkest">Contact</td>
+                <td class="p-2 px-4 text-gray-darkest">support&#64;sandwave.io</td>
+            </tr>
+            <tr>
+                <td class="p-2 px-4 text-gray-darkest">IBAN</td>
+                <td class="p-2 px-4 text-gray-darkest">NL64 RABO 0161 8876 35</td>
+            </tr>
+            <tr>
+                <td class="p-2 px-4 text-gray-darkest">KvK</td>
+                <td class="p-2 px-4 text-gray-darkest">22059274</td>
+            </tr>
+            <tr>
+                <td class="p-2 px-4 text-gray-darkest">BTW</td>
+                <td class="p-2 px-4 text-gray-darkest">NL815123255B01</td>
+            </tr>
+        </table>
+
+    </div>
+    <span class="text-gray-darker text-sm text-center">&copy; 2020 Astralus BV  &middot;</span>
+    <a href="/algemene-voorwaarden.html" class="text-brand text-sm">Algemene voorwaarden</a>
+    <br>
+    <span class="text-gray-darker text-sm text-center"><strong>Sandwave.io</strong> and <strong>Sandwave Software</strong> are registered trademarks of Astralus BV</span>
+    <br>
+    <span class="text-gray-darker text-sm text-center">Site by <a class="font-bold" href="https://kramerventures.nl">Jesse Kramer</a></span>
+</footer>
+
+</body>
+</html>
