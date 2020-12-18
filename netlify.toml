@@ -1,4 +1,5 @@
 [[redirects]]
   from = "https://roadmap.sandwave.io/*"
   to = "https://www.notion.so/1695446daa3c4fa582e4ab4a8952323b?v=df6f541639544b4c85cd9e2fbcbc3e59"
+  status = 200
   force = true
