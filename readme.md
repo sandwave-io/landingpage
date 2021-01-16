@@ -16,7 +16,32 @@ The project has been built with [Jekyll](https://jekyllrb.com/) and [TailwindCSS
 to use the different build scripts and pull different 3rd party packages for both the frameworks a `Makefile` is provided
 with the necessary scripts to develop and build the website.
 
-## `make build` (production)
+## Using docker
+
+A docker-compose environment has been configured to run this project locally without having to install anything!
+
+Simply run:
+```bash
+docker-compose up
+```
+
+It will automatically boot a container, install all dependencies, and start a development server. Just wait until you see:
+```
+    Server address: http://0.0.0.0:4000/
+    Server running... press ctrl-c to stop.
+```
+
+Now any changes you make will be visible at http://localhost:4000
+
+Just press CTRL+C to stop the dev server.
+
+## Local development
+
+If you don't want to use docker you can also install everything locally. You do need **Ruby**, **Bundler** and **NodeJS**.
+
+For consistency and ease-of-use, we recommend you use the docker environment.
+
+### `make build` (production)
 
 This subroutine can be used to build the site locally, as well as on production. It utilizes make to automatically resolve
 dependencies where necessary. The command first compiles a new tailwind file from the `_css/styles.css` source, which is
@@ -31,14 +56,14 @@ installing ruby dependencies, which is automated by the `Makefile`.
 After running the build command, the compiled assets are placed in the `_site` directory, which can be used as the documentroot
 of the production webserver.
 
-## `make serve`
+### `make serve`
 
 In order to do local development, you can run `make serve`. This subroutine compiles the css, and then goes to boot up a
 local webserver on which the compiled jekyll site is served. This process also watches your source files, and automatically
 recompiles the jekyll site once you update something. Note that after you update the tailwind source, you need to manually
 run `make build` or restart the `make serve` process.
 
-## Manually installing dependencies
+### Manually installing dependencies
 
 In order to force the dependencies to reinstall you could use the `-B` flag in make in order to consider all make targets
 to be out of date.

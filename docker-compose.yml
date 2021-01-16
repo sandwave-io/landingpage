@@ -1,0 +1,15 @@
+services:
+  site:
+    image: jekyll/jekyll:4.0
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    volumes:
+      - .:/srv/jekyll
+      - gemcache:/usr/gem/cache
+      - bundle:/usr/local/bundle
+    command: ["jekyll", "serve"]
+
+volumes:
+  gemcache: {}
+  bundle: {}
