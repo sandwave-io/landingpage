@@ -49,3 +49,4 @@ exclude:
   - purgecss.config.js
   - tailwind.config.js
   - readme.md
+  - docker-compose.yml
