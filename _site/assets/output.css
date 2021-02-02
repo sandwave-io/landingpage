@@ -1133,6 +1133,10 @@ video {
   background-color: rgb(  1, 68, 81);
 }
 
+.bg-sandwave-20 {
+  background-color: rgb(245, 250, 255);
+}
+
 .bg-sandwave-50 {
   background-color: rgb(235,245,255);
 }
